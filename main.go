@@ -11,8 +11,6 @@ func main() {
 	app.Get("/head", func(c *fiber.Ctx) error {
 		return c.SendString("นี่คือหัวหน้า")
 	})
-
-<<<<<<< HEAD
 	// API ของสมาชิก mind
 	app.Get("/mind", func(c *fiber.Ctx) error {
 		return c.SendString("นี่คือสมาชิก mind")
