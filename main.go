@@ -19,10 +19,10 @@ func main() {
 	// API ของสมาชิก beam
 	app.Get("/beam", func(c *fiber.Ctx) error {
 		return c.SendString("นี่คือสมาชิก beam")
-})
+	})
 	app.Get("/nam", func(c *fiber.Ctx) error {
 		return c.SendString("นี่คือสมาชิก nam")
->>>>>>> origin/dev-nam
+
 	})
 
 	app.Listen(":3000")
