@@ -17,5 +17,10 @@ func main() {
 		return c.SendString("นี่คือสมาชิก mind")
 	})
 
+	// API ของสมาชิก beam
+	app.Get("/beam", func(c *fiber.Ctx) error {
+		return c.SendString("นี่คือสมาชิก beam")
+	})
+
 	app.Listen(":3000")
 }
