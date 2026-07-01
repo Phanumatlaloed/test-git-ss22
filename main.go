@@ -11,6 +11,10 @@ func main() {
 	app.Get("/head", func(c *fiber.Ctx) error {
 		return c.SendString("นี่คือหัวหน้า")
 	})
+	// API ของสมาชิก
+	app.Get("/momo", func(c *fiber.Ctx) error {
+		return c.SendString("นี่คือmomo สมาชิก")
+	})
 
 	app.Listen(":3000")
 }
