@@ -12,5 +12,9 @@ func main() {
 		return c.SendString("นี่คือหัวหน้า")
 	})
 
+	// API ของสมาชิก
+	app.Get("/rinda", func(c *fiber.Ctx) error {
+		return c.SendString("นี่คือrindaสมาชิก")
+	})
 	app.Listen(":3000")
 }
