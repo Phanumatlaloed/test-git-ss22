@@ -12,5 +12,9 @@ func main() {
 		return c.SendString("นี่คือหัวหน้า")
 	})
 
+	app.Get("/nam", func(c *fiber.Ctx) error {
+		return c.SendString("นี่คือสมาชิก nam")
+	})
+
 	app.Listen(":3000")
 }
